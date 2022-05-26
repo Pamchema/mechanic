@@ -5,7 +5,7 @@
 }
 
 body {
-  font-family: "My Soul", cursive;
+  font-family: "Manrope", cursive;
 }
 
 .container {
@@ -73,8 +73,14 @@ body {
   margin-top: 20px;
 }
 
+.page-end img {
+
+  margin-bottom: -3px;
+}
+
+
 .page-end h6 {
-  margin-left: 30px;
+  margin-right: 19px;
 }
 
 .page-end {
@@ -147,8 +153,8 @@ body {
 
 .Number-flex {
   display: flex;
-  justify-content: space-between;
-  align-content: space-between;
+  justify-content: space-evenly;
+  align-content: space-evenly;
 }
 
 .Number-section.Number-flex {
@@ -249,7 +255,7 @@ li .jutify-content {
 
 .Border {
   border-left: 3px dashed #ff6433;
-  margin-left: 32px;
+  margin-left: 17px;
   margin-top: 20px;
   margin-bottom: 20px;
 }
@@ -346,17 +352,23 @@ li .jutify-content {
 
 .get a img {
   padding-right: 40px;
-  /* margin:10px; */
+  margin-bottom: -2px;
 }
+
+
 
 .car-servicing h2 {
   font-size: 40px;
-  /* font-family: "Manrope"; */
-  /* font-style: normal; */
-  /* font-weight: 700;
+
+  margin-bottom: 30px;
+}
+
+/* font-family: "Manrope"; */
+/* font-style: normal; */
+/* font-weight: 700;
   
   /* line-height: 69px; */
-  /* letter-spacing: -0.03em; */
+/* letter-spacing: -0.03em; */
 }
 
 .list-form {
@@ -444,6 +456,7 @@ input[type="phone-number"] {
   display: flex;
   padding-left: 20px;
   /* justify-content: center; */
+  align-items: center;
 }
 
 .top-page .Navigation {
@@ -482,6 +495,11 @@ input[type="phone-number"] {
   font-weight: 600;
   font-size: 18px;
   line-height: 32px;
+}
+.align-items {
+  display: flex;
+  /* justify-content: center; */
+  align-items: center;
 }
 
 .Navigation {
@@ -564,7 +582,8 @@ input[type="phone-number"] {
   /* line-height: 67px; */
   text-align: center;
   /* letter-spacing: -0.03em; */
-  padding-bottom: 5px;
+
+  margin-bottom: 56px;
 }
 
 .review-flex {
@@ -749,7 +768,7 @@ width: 5%;
 
 .black-section {
   padding: 80px 0;
-  min-height: 100vh;
+  max-height: 100vh;
 
 }
 
@@ -858,7 +877,7 @@ width: 5%;
     flex-direction: column;
     align-items: flex-start;
     width: 100%;
-    display: none;
+    /* display: none; */
 
   }
 
@@ -931,7 +950,7 @@ width: 5%;
     /* text-align: justify; */
     margin-left: 38px;
     /* padding-left: 20px; */
-    /* height: 56px; */
+    height: 66px;
   }
 
   .img-form li {
@@ -971,11 +990,19 @@ width: 5%;
     /* width: 70%; */
   }
 
-  .display {
+  .align-items {
     display: flex;
     /* justify-content: center; */
     align-items: center;
   }
+  .display .list-icon .text-icon{
+    /* justify-content: center; */
+    align-items: center;
+    display:flex;
+  
+  }
+  .car-servicing
+  
 
   .text-area p {
     margin-left: 8px;
@@ -1112,12 +1139,33 @@ width: 5%;
 
     padding-bottom: 18px;
   }
+  .flex-roll{
+    display: flex;
+  }
 
   .footer-nav ul {
     display: flex;
 
     display: none;
   }
+  .Number-section {
+    background: #f2f2f2;
+    width: 100%;
+
+      padding-left: 5px;
+      padding-top: 20px;
+  }
+  .Number-flex h2 {
+    
+    text-align: center;
+    
+}
+.Number-flex h6 {
+    
+  text-align: center;
+  margin-left: -7px;
+  
+}
 }
 
 /* Tablet view */
@@ -1125,5 +1173,114 @@ width: 5%;
 @media (max-width: 769px) {
   .phone-logo {
     display: none;
+  }
+
+  .container {
+    width: 90%;
+
+  }
+
+  .text-logo h1 {
+    /* font-family: "Manrope"; */
+    /* font-style: normal; */
+    font-weight: 795;
+    font-size: 35px;
+    line-height: 65px;
+    /* letter-spacing: -0.03em; */
+  }
+
+  .car-servicing h2 {
+    font-size: 36px;
+    /* font-family: "Manrope"; */
+    /* font-style: normal; */
+    /* letter-spacing: -0.03em; */
+  }
+
+  .img-form li {
+    padding: 7px;
+  }
+
+  .img-form img {
+    background: white;
+    border-radius: 50%;
+    width: 16%;
+  }
+
+  .form-write {
+
+    margin-bottom: 63px;
+    padding-bottom: 6px;
+    width: 83%;
+  }
+
+  .img-form li {
+    display: flex;
+    align-items: center;
+    justify-items: center;
+  }
+
+  .car-servicing p {
+    padding: 0;
+  }
+
+  .car-form input[type="text"],
+  input[type="phone-number"] {
+
+    padding: 19px;
+    margin-bottom: 5px;
+  }
+
+  .form-write {
+    font-family: "Manrope";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 23px;
+    opacity: 0.6;
+    text-align: justify;
+    margin-left: 35px;
+    padding-left: 20px;
+    /* height: 35px; */
+  }
+
+  .car-form h3 {
+
+    font-size: 35px;
+  }
+
+  .left-section h2 {
+
+    font-size: 35px;
+  }
+
+  .car-servicing {
+    width: 45%;
+    padding: 0;
+  }
+
+  .Border {
+    border-left: 3px dashed #ff6433;
+    margin-left: 18px;
+    margin-top: 11px;
+    margin-bottom: 15px;
+  }
+
+  .text-three p {
+    margin-left: 18px;
+  }
+
+  .page-end img {
+
+    margin-bottom: -1px;
+  }
+
+  .page-end h6 {
+    /* display: flex; */
+    /* margin-left: 37px; */
+    margin-right: 17px;
+    /* align-items: center; */
+  }
+  .footer-nav{
+    display:none
   }
 }
